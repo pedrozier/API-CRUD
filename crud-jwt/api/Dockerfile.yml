@@ -1,0 +1,4 @@
+FROM openjdk:11-jdk-alpine
+ADD target/crud.jar crud.jar
+EXPOSE 8085
+ENTRYPOINT ["java","-jar","crud.jar"]
